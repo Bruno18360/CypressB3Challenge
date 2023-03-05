@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "allure:report": "allure generate --clean allure-results && allure open",
+    "cy:dash": "npx cypress run --record --key {secrets_dash}",
+    "cy:open": "cypress open",
+    "cy:test": "cypress run"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "2.23.0",
+    "cypress": "^12.7.0",
+    "cypress-grep": "2.13.1",
+    "cypress-xpath": "1.6.2",
+    "faker-br": "^0.4.1"
+  }
+}
